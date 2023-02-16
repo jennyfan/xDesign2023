@@ -101,7 +101,6 @@ h2 {
   font-weight: 600;
   font-style: normal;
   margin: 0.5rem 0;
-  text-align: center;
   text-transform: lowercase;
 }
 h3 {
@@ -253,6 +252,7 @@ section {
   background-image: url('../img/Title.jpg');
   background-repeat: no-repeat;
   background-size: contain;
+  text-align: center;
 }
 .title_top {
   position: relative;
