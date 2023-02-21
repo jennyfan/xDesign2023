@@ -77,7 +77,12 @@ html {
     font-size: 20px;
   }
 }
-
+/* small screens */
+@media (max-width: 640px) { 
+  html {
+    font-size: 14px;
+  }
+}
 
 body {
   background-color: var(--clr-white);
@@ -100,8 +105,8 @@ p, li {
 }
 .small, .copyright, li {
   font-family: var(--font-sans);
-  font-size: 1.2rem;
-  line-height: 160%;
+  font-size: 1rem;
+  line-height: 150%;
 }
 
 h1 {
@@ -109,7 +114,7 @@ h1 {
   font-size: 2.5rem;
   line-height: 140%;
   font-weight: 600;
-  letter-spacing: 10%;
+  letter-spacing: 0.5rem;
   margin: 1rem 0;
 }
 h2 {
@@ -124,9 +129,10 @@ h2 {
 h3 {
   font-family: var(--font-sans);
   font-size: 1.25rem;
-  line-height: 140%;
+  line-height: 160%;
   font-weight: 600;
   margin: 0.5rem 0;
+  letter-spacing: 0.15rem;
   text-transform: lowercase;
 }
 h4 {
@@ -184,6 +190,7 @@ a.cta {
 #nav .cta {
   border-radius: 0;
   margin: 0;
+  padding: 1rem;
 }
 
 
@@ -233,7 +240,7 @@ section {
 .title4_3 { grid-row: 4; grid-column: 3; justify-self: flex-end; }
 .title4_6 { grid-row: 4; grid-column: 6; }
 .title4_7 { grid-row: 4; grid-column: 7; }
-.title4-6_8 { grid-row-start: 4; grid-row-end: 6; grid-column: 8; align-self: end; }
+.title4_8 { grid-row-start: 4; grid-row-end: 6; grid-column: 8; align-self: end; }
 .title5_3 { grid-row-start: 5; grid-row-end: 7; grid-column: 3; }
 .title5_4 { grid-row: 5; grid-column: 4; align-self: end; }
 .title5_6 { grid-row-start: 5; grid-row-end: 7; grid-column: 6; }
@@ -259,12 +266,13 @@ section {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 5rem;
+}
+#about > div {
+  width: 50%;
 }
 .map {
-  width: 50%;
-  min-width: 480px;
-  max-width: 600px;
+  width: 100%;
 }
 
 
@@ -307,6 +315,10 @@ footer {
 .social li {
   display: inline-flex;
   padding: 0 0.25rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 600;
 }
 .copyright {
   display: flex;
@@ -353,6 +365,9 @@ footer {
   #about {
     flex-direction: column;
   }
+  #about > div {
+    width: 100%;
+  }
   .team_list {
     flex-direction: column;
     text-align: center;
@@ -380,7 +395,7 @@ footer {
   overflow: auto;
   transition: 300ms ease-in-out;
   --animate-duration: 300ms;
-  background-color: var(--clr-sage);
+  background-color: var(--clr-paleyellow);
 }
 
 .close {
