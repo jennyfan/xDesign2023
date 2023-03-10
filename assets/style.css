@@ -97,7 +97,7 @@ ul {
   margin: 0;
   flex: 1 1 auto;
 }
-p, li {  
+p, li, span {  
   font-family: var(--font-sans);
   font-size: 1.25rem;
   line-height: 140%;
@@ -166,7 +166,6 @@ hr {
   display: inline-block;
   background-color: var(--clr-paleyellow);
   padding: 0.4em 1rem;
-  margin-bottom: 0.75rem;
   border-radius: 2rem;
 }
 a.cta {
@@ -189,8 +188,7 @@ a.cta {
 }
 #nav .cta {
   border-radius: 0;
-  margin: 0;
-  padding: 1rem;
+  padding: 1rem 1.5rem 1rem 1rem;
 }
 
 
