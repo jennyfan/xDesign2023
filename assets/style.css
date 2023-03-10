@@ -140,19 +140,18 @@ h4 {
   font-size: 1.2rem;
   line-height: 140%;
   font-weight: 600;
-  color: var(--clr-green);
+  color: var(--clr-darkgreen);
   margin: 0.5rem 0;
 }
 
 
 a, a:link, a:visited {
-  color: var(--clr-black);
+  color: var(--clr-green);
   text-decoration: none;
-  background-color: var(--clr-paleyellow);
   transition: 300ms;
 }
 a:hover {
-  background-color: var(--clr-accent);
+  color: var(--clr-darkgreen);
 }
 
 hr {
@@ -170,6 +169,12 @@ hr {
 }
 a.cta {
   border: 0;
+  color: var(--clr-black);
+  transition: 800ms;
+}
+a.cta:hover {
+  background-color: var(--clr-sage);
+  transition: 800ms;
 }
 #nav {
   position: sticky;
@@ -314,6 +319,9 @@ footer {
   gap: 0.5rem;
   margin: 1.5rem 0 0 0;
 }
+footer a:link, a:visited {
+  color: var(--clr-black);
+}
 .social li {
   display: inline-flex;
   padding: 0 0.25rem;
@@ -427,10 +435,10 @@ footer {
   gap: 1rem;
 }
 .profile > div {
-  max-width: 300px;
+  max-width: 400px;
 }
 .profile img {
-  width: 100%;
+  width: 230px;
 }
 
 /* Animations */
