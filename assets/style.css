@@ -360,11 +360,18 @@ footer a:link, a:visited {
 .panel_speakers {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
+.panel_speakers > div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 150px;
+}
 .panel img {
-  height: 120px;
+  width: 150px;
 }
 
 /* wrap columns at small screens */
