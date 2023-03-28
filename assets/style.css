@@ -320,7 +320,7 @@ footer {
   gap: 0.5rem;
   margin: 1.5rem 0 0 0;
 }
-footer a:link, a:visited {
+footer a:link, footer a:visited {
   color: var(--clr-black);
 }
 .social li {
@@ -371,11 +371,17 @@ footer a:link, a:visited {
   flex-wrap: wrap;
   max-width: 150px;
 }
+.modal a:link,
+.modal a:visited,
+.panel_speakers a:link,
+.panel_speakers a:visited {
+  text-decoration: underline;
+}
 .panel img {
   width: 150px;
 }
 .panel img:hover {
-  filter: sepia(0.8) hue-rotate(80deg);
+  filter: sepia(0.8) contrast(80%);
 }
 
 /* wrap columns at small screens */
