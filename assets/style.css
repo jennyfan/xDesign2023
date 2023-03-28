@@ -371,10 +371,8 @@ footer a:link, footer a:visited {
   flex-wrap: wrap;
   max-width: 150px;
 }
-.modal a:link,
-.modal a:visited,
-.panel_speakers a:link,
-.panel_speakers a:visited {
+.modal a:hover,
+.panel_speakers a:hover {
   text-decoration: underline;
 }
 .panel img {
