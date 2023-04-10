@@ -180,6 +180,7 @@ a.cta:hover {
   position: sticky;
   top: 0;
   margin: 0;
+  padding-right: 1.5rem;
   z-index: 10;
   display: flex;
   justify-content: space-between;
